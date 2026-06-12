@@ -21,7 +21,7 @@ function Dashboard() {
   const load = () => {
     api
       .get("/bookings/my")
-      .then((res) => setBookings(res.data.bookings))
+      .then((res) => setBookings(res.data.bookings || []))
       .catch(() => setError("Could not load your bookings."))
       .finally(() => setLoading(false));
   };

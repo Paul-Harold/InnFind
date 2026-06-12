@@ -23,7 +23,7 @@ function Rooms() {
     });
     api
       .get("/rooms", { params })
-      .then((res) => setRooms(res.data.rooms))
+      .then((res) => setRooms(res.data.rooms || []))
       .catch(() => setError("Could not load rooms. Is the API running?"))
       .finally(() => setLoading(false));
   }, [searchParams]);

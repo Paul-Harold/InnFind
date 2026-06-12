@@ -24,7 +24,7 @@ function Reviews({ hotelId, onChanged }) {
   const load = () => {
     api
       .get(`/reviews/hotel/${hotelId}`)
-      .then((res) => setReviews(res.data.reviews))
+      .then((res) => setReviews(res.data.reviews || []))
       .catch(() => setReviews([]))
       .finally(() => setLoading(false));
   };
