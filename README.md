@@ -1,4 +1,4 @@
-# StaySphere — Hotel Reservation App
+# InnFind — Hotel Reservation App
 
 A full-stack hotel reservation platform built as a portfolio project. Browse hotels across the Philippines, book a room, manage your stays, and leave reviews — all backed by a REST API with JWT authentication.
 
@@ -25,8 +25,8 @@ A full-stack hotel reservation platform built as a portfolio project. Browse hot
 
 | Role | Email | Password |
 |---|---|---|
-| Admin | admin@staysphere.com | admin123 |
-| User | demo@staysphere.com | demo123 |
+| Admin | admin@innfind.com | admin123 |
+| User | demo@innfind.com | demo123 |
 
 ---
 

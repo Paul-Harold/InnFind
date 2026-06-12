@@ -32,7 +32,7 @@ function BookingConfirmation() {
       <div className="receipt">
         <div className="receipt-header">
           <div>
-            <h2>StaySphere</h2>
+            <h2>InnFind</h2>
             <p className="muted">Booking receipt</p>
           </div>
           <div className="receipt-meta">

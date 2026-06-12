@@ -4,5 +4,5 @@ dist/
 .env.local
 *.log
 .DS_Store
-server/seed/check-env.mjs
+server/check-env.mjs
 server/seed/complete-booking-helper.mjs

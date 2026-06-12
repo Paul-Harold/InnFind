@@ -153,8 +153,8 @@ const seed = async () => {
 
     // Demo accounts (created only if missing so reseeding keeps logins stable).
     const accounts = [
-      { name: "Admin", email: "admin@staysphere.com", password: "admin123", role: "admin" },
-      { name: "Demo User", email: "demo@staysphere.com", password: "demo123", role: "user" },
+      { name: "Admin", email: "admin@innfind.com", password: "admin123", role: "admin" },
+      { name: "Demo User", email: "demo@innfind.com", password: "demo123", role: "user" },
     ];
     for (const account of accounts) {
       const exists = await User.findOne({ email: account.email });
@@ -214,7 +214,7 @@ const seed = async () => {
     console.log(
       `Seeded ${hotelsData.length} hotels, ${totalRooms} rooms, ${reviewSpecs.length} reviews.`
     );
-    console.log("Demo accounts: admin@staysphere.com/admin123, demo@staysphere.com/demo123");
+    console.log("Demo accounts: admin@innfind.com/admin123, demo@innfind.com/demo123");
     process.exit(0);
   } catch (error) {
     console.error(error);

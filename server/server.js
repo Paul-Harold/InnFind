@@ -56,10 +56,15 @@ app.use("/api/admin", adminRoutes);
 
 app.use(errorHandler);
 
-const PORT = process.env.PORT || 5000;
+// Connect to DB eagerly. In serverless, connectDB is a no-op after first call.
+await connectDB();
 
-connectDB().then(() => {
+// Vercel sets VERCEL=1 — skip app.listen there (Vercel handles the HTTP layer).
+if (!process.env.VERCEL) {
+  const PORT = process.env.PORT || 5000;
   app.listen(PORT, () => {
     console.log(`Server running on http://localhost:${PORT} [${process.env.NODE_ENV || "development"}]`);
   });
-});
+}
+
+export default app;
